@@ -16,13 +16,15 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+  background-color: #e2e0df;
 }
 
 .content {
   /* border: 2px solid; */
   width: 90vw;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .card {
@@ -57,21 +59,20 @@ h3 {
   transition: opacity 1s ease-in;
 }
 
-@media (max-width: 650px) { 
+@media (max-width: 800px) { 
   .content {
-    width: 100vw;
+    height: 95vh;
+    flex-flow: column;
+  }
+
+  .card {
+    width: 90vw;
+    margin: 0.5rem;
+    flex: 0.3;
   }
 
   .card:nth-child(5) {
     display: none;
   }
-}
-
-@media (max-width: 480px) {
-  .card:nth-child(4),
-  .card:nth-child(5) {
-    display: none;
-  }
-
 }
 

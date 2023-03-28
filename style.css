@@ -68,7 +68,7 @@ h3 {
   .card {
     width: 90vw;
     margin: 0.5rem;
-    flex: 0.3;
+    flex: 0.5;
   }
 
   .card:nth-child(5) {
